@@ -1,0 +1,148 @@
+/* Heading animation */
+.project-heading {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project-heading.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Projects container */
+.projects-container .project-item {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.projects-container.show .project-item {
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: var(--delay);
+}
+
+/* Hover effect */
+.project-item:hover {
+  transform: scale(1.03);
+}
+
+/* Image overlay buttons */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.image-container:hover .button-overlay {
+  opacity: 1;
+}
+
+.project-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.image-container:hover .project-button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.github-button {
+  background-color: #1F2937;
+  color: white;
+}
+
+.github-button:hover {
+  background-color: #374151;
+  transform: translateY(-2px);
+}
+
+.live-button {
+  background-color: #3B82F6;
+  color: white;
+}
+
+.live-button:hover {
+  background-color: #2563EB;
+  transform: translateY(-2px);
+}
+
+/* Tech tags animation */
+.tech-tag {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.projects-container.show .tech-tag {
+  animation: tagFadeIn 0.3s ease forwards;
+  animation-delay: var(--tag-delay);
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tagFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base styles */
+.project-item {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-image {
+  transition: box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+.dark .project-heading {
+  color: white;
+}
+
+.dark .button-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dark .tech-tag {
+  background-color: #111827;
+}

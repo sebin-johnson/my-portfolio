@@ -9,7 +9,7 @@ export const PROJECTS = [
     title: "Fair Craft",
     image: project5,
     description:
-      "A showcase platform to explore, share, and discover innovative projects across various domains.",
+      "A MERN stack web app for showcasing personal projects with images, details, and external links.",
     technologies: ["React", "Bootstrap", "Express"],
     liveLink: "https://faricraftfe-frontend.onrender.com/",
     githubLink: "https://github.com/sebin-johnson/fariCraftFE"

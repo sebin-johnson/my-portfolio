@@ -42,7 +42,7 @@ export const PROJECTS = [
     githubLink: "https://github.com/sebin-johnson/netflixClone"
   },
   {
-    title: "E-kart website",
+    title: "E-kart Website",
     image: project4,
     description:
       "A fast and convenient online shopping platform offering a wide range of products with seamless browsing and easy checkout.",

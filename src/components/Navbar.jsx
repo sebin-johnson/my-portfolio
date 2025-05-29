@@ -78,7 +78,7 @@ const Navbar = () => {
             {[
               {
                 icon: FaLinkedin,
-                href: "https://www.linkedin.com/in/sebin-johnson-685ba72b2",
+                href: "www.linkedin.com/in/sebinjohnson-tech",
                 color: "text-indigo-300"
               },
               {

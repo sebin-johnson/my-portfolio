@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiCss3, SiHtml5, SiJavascript, SiMongodb, SiNodedotjs, SiTailwindcss } from 'react-icons/si'
+import { SiBootstrap, SiCss3, SiHtml5, SiJavascript, SiMongodb, SiNodedotjs, SiTailwindcss } from 'react-icons/si'
 
 const Technologies = () => {
   const containerVariants = {

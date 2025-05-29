@@ -74,6 +74,10 @@ const Technologies = () => {
         </motion.div>
         
         <motion.div variants={itemVariants} className='p-4' whileHover={iconHover}>
+          <SiBootstrap className='text-7xl text-purple-600' />
+        </motion.div>
+        
+        <motion.div variants={itemVariants} className='p-4' whileHover={iconHover}>
           <SiTailwindcss className='text-7xl text-sky-400' />
         </motion.div>
       </motion.div>

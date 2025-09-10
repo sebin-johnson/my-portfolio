@@ -3,8 +3,18 @@ import project2 from "../assets/foodHub.png";
 import project3 from "../assets/movieWebsite.png";
 import project4 from "../assets/shopNGo.png";
 import project5 from "../assets/fairCraft.png";
+import project6 from "../assets/FreshCart.png";
 
 export const PROJECTS = [
+  {
+    title: "Fresh Cart",
+    image: project6,
+    description:
+      "MERN-based e-commerce web app for browsing products, managing carts, and placing orders.",
+    technologies: ["React", "NodeJs", "MongoDB"],
+    liveLink: "https://fresh-cart-phi-six.vercel.app/",
+    githubLink: "https://github.com/sebin-johnson/FreshCart"
+  },
   {
     title: "Fair Craft",
     image: project5,

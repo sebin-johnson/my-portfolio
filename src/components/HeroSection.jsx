@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import profilePic from '../assets/profilePic.jpg'
+import cv from '../assets/Sebin Johnson.pdf'
 
 const HeroSection = () => {
   const containerVariants = {
@@ -71,7 +72,7 @@ const HeroSection = () => {
             </motion.p>
             
             <motion.a 
-              href="" 
+              href={cv}
               target='_blank' 
               className='bg-white rounded-xl p-4 text-sm text-stone-800 mb-10 ms-0 sm:ms-10'
               variants={childVariants}
